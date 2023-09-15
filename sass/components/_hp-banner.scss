@@ -1,0 +1,33 @@
+$colorPrimary: #435423;
+$colorSecondary: #834339;
+
+.hp-banner {
+    background: $colorPrimary;
+    border-radius: 20px;
+    height: 700px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hp-banner-content {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        color: white;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: white;
+        font-size: 5rem;
+        font-weight: bolder;
+        line-height: 1;
+        margin-top: 0;
+    }
+}

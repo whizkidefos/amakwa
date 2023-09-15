@@ -1,0 +1,39 @@
+.main-header {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid whitesmoke;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.nav-pills {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+    color: $colorPrimary;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all 250ms;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        color: whitesmoke;
+        background: $colorPrimary;
+    }
+}
