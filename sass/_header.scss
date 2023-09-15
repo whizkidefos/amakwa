@@ -1,6 +1,7 @@
 .main-header {
     background: transparent;
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -19,6 +20,11 @@
     border: 2px solid whitesmoke;
     border-radius: 100%;
     object-fit: cover;
+
+    @media (max-width: 550px) {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .nav-pills {
@@ -35,5 +41,16 @@
         text-decoration: none;
         color: whitesmoke;
         background: $colorPrimary;
+    }
+
+    @media (max-width: 550px) {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

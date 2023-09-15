@@ -9,11 +9,11 @@
 <body>
 
     <header class="main-header">
-        <div class="uk-container">
+        <div class="uk-container uk-container-large">
             <div class="nav-wrapper">
-                <div class="menu-toggler nav-pills"><span uk-icon="icon: menu"></span> MENU</div>
+                <div class="menu-toggler nav-pills"><span uk-icon="icon: menu"></span> <span class="hide-on-mobile">MENU</span></div>
                 <a href="/" class="nav-logo"><img src="<?php echo get_template_directory_uri() . "/images/amakwa.png" ?>" alt="amakwa logo"></a>
-                <a href="/contact" class="nav-contact nav-pills"><span uk-icon="icon: location"></span> CONTACT</a>
+                <a href="/contact" class="nav-contact nav-pills"><span uk-icon="icon: location"></span> <span class="hide-on-mobile">CONTACT</span></a>
             </div>
         </div>
     </header>

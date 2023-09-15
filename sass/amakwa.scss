@@ -1,6 +1,12 @@
 $colorPrimary: #435423;
 $colorSecondary: #834339;
 
+.hide-on-mobile {
+    @media (max-width: 550px) {
+        display: none;
+    }
+}
+
 // Components
 @import './components/hp-banner';
 

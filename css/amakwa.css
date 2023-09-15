@@ -1,8 +1,14 @@
+@media (max-width: 550px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
 .hp-banner {
   background: #435423;
   border-radius: 20px;
   height: 700px;
-  margin: 15px;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +41,7 @@
 
 .main-header {
   background: transparent;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -62,6 +68,12 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 550px) {
+  .nav-logo img {
+    width: 120px;
+    height: 120px;
+  }
+}
 
 .nav-pills {
   background: white;
@@ -79,4 +91,21 @@
   text-decoration: none;
   color: whitesmoke;
   background: #435423;
+}
+@media (max-width: 550px) {
+  .nav-pills {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
