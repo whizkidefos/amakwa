@@ -4,6 +4,12 @@
   }
 }
 
+.section-heading {
+  color: #435423;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .hp-banner {
   background: #435423;
   border-radius: 20px;
@@ -37,6 +43,49 @@
   font-weight: bolder;
   line-height: 1;
   margin-top: 0;
+}
+
+.intro {
+  padding: 5rem 0;
+}
+.intro img {
+  border-radius: 20px;
+}
+
+.our-services {
+  padding: 3rem 0;
+}
+
+.service-card {
+  -webkit-box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  padding: 20px 10px;
+}
+@media (max-width: 960px) {
+  .service-card {
+    margin-bottom: 3rem;
+  }
+}
+.service-card .service-card-icon {
+  color: white;
+  width: 80px;
+  height: 80px;
+  background: #435423;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-header {
@@ -77,6 +126,7 @@
 
 .nav-pills {
   background: white;
+  border: 1px solid white;
   border-radius: 20px;
   -webkit-box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);

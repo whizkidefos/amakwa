@@ -1,0 +1,28 @@
+.our-services {
+    padding: 3rem 0;
+}
+
+.service-card {
+    box-shadow: $boxShadow;
+    border-radius: $borderRadius;
+    text-align: center;
+    position: relative;
+    padding: 20px 10px;
+    
+    @media (max-width: 960px) {
+        margin-bottom: 3rem;
+    }
+
+    .service-card-icon {
+        color: white;
+        width: 80px;
+        height: 80px;
+        background: $colorPrimary;
+        border-radius: 50%;
+        font-size: 2rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

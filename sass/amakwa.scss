@@ -1,5 +1,7 @@
 $colorPrimary: #435423;
 $colorSecondary: #834339;
+$borderRadius: 20px;
+$boxShadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
 
 .hide-on-mobile {
     @media (max-width: 550px) {
@@ -7,7 +9,15 @@ $colorSecondary: #834339;
     }
 }
 
+.section-heading {
+        color: $colorPrimary;
+        font-weight: bold;
+        font-size: 2rem
+    }
+
 // Components
 @import './components/hp-banner';
+@import './components/intro';
+@import './components/our-services';
 
 @import './header';
