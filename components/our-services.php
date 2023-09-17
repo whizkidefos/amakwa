@@ -2,7 +2,7 @@
     <div class="uk-container">
         <h2 class="uk-text-center section-heading">Insight</h2>
         <br><br>
-        <div class="uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-column-small uk-grid-match" uk-grid>
+        <div class="uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-match" uk-grid>
             <div class="">
                 <article class="service-card">
                     <span uk-icon="icon: future" class="service-card-icon"></span>

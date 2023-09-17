@@ -17,9 +17,11 @@
 .nav-logo img {
     width: 150px;
     height: 150px;
-    border: 2px solid whitesmoke;
+    box-shadow: $boxShadow;
     border-radius: 100%;
     object-fit: cover;
+
+    margin-top: 5px;
 
     @media (max-width: 550px) {
         width: 120px;
@@ -31,7 +33,7 @@
     background: white;
     border: 1px solid white;
     border-radius: 20px;
-    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: $boxShadow;
     color: $colorPrimary;
     padding: 10px 30px;
     text-decoration: none;
@@ -53,5 +55,60 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+.main-nav {
+    background: white;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    padding: 3rem 2rem;
+    margin: 20px;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    // width: 100vw;
+    height: auto;
+    z-index: 10;
+
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: white;
+        background: $colorPrimary;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+
+    .nav-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-group {
+        margin: 20px 0;
+        width: calc(25% - 20px);
+
+        h4 {
+            color: $colorPrimary;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        a {
+            color: #666;
+            display: block;
+            text-decoration: none;
+        }
     }
 }

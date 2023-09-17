@@ -17,3 +17,43 @@
             </div>
         </div>
     </header>
+
+    <nav class="main-nav">
+        <span uk-icon="close" class="close"></span>
+        <div class="nav-wrapper">
+            <div class="nav-group">
+                <h4>Nav title</h4>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+            </div>
+
+            <div class="nav-group">
+                <h4>Nav title</h4>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+            </div>
+
+            <div class="nav-group">
+                <h4>Nav title</h4>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+            </div>
+
+            <div class="nav-group">
+                <h4>Nav title</h4>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+            </div>
+
+            <div class="nav-group">
+                <h4>Nav title</h4>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+                <a href="#">Dummy link</a>
+            </div>
+        </div>
+    </nav>

@@ -5,10 +5,14 @@ $colorSecondary: #834339;
     background: $colorPrimary;
     border-radius: 20px;
     height: 700px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 960px) {
+        margin: 10px;
+    }
 }
 
 .hp-banner-content {
@@ -21,6 +25,11 @@ $colorSecondary: #834339;
     h1 {
         color: white;
         margin-bottom: 0;
+        font-size: 3rem;
+
+        @media (max-width: 960px) {
+            font-size: 2rem;
+        }
     }
 
     h3 {
@@ -29,5 +38,9 @@ $colorSecondary: #834339;
         font-weight: bolder;
         line-height: 1;
         margin-top: 0;
+
+        @media (max-width: 960px) {
+            font-size: 3rem;
+        }
     }
 }

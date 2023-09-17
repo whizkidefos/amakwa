@@ -1,6 +1,6 @@
 <footer>
     <div class="uk-container">
-        <small class="uk-text-center">&copy; <?php echo date("Y"); ?> Amakwa Comminity Model School.</small>
+        <small class="uk-text-center">&copy; <?php echo date("Y"); ?> Amakwa Community Model School | All rights reserved.</small>
     </div>
 </footer>
 
