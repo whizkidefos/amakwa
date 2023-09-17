@@ -65,15 +65,19 @@
     padding: 3rem 2rem;
     margin: 20px;
 
+    @media (max-width: 960px) {
+        margin: 5px;
+    }
+
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
-    // width: 100vw;
+    top: -100%;
     height: auto;
     z-index: 10;
+    transition: all 250ms ease-in-out;
 
-    .close {
+    .close-menu {
         position: absolute;
         right: 20px;
         top: 20px;
@@ -92,12 +96,20 @@
     .nav-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .nav-group {
         margin: 20px 0;
         width: calc(25% - 20px);
+
+        @media (max-width: 768px) {
+            width: calc(50% - 20px);
+        }
+
+        @media (max-width: 550px) {
+            width: 100%;
+        }
 
         h4 {
             color: $colorPrimary;

@@ -19,7 +19,7 @@
     </header>
 
     <nav class="main-nav">
-        <span uk-icon="close" class="close"></span>
+        <span uk-icon="close" class="close-menu"></span>
         <div class="nav-wrapper">
             <div class="nav-group">
                 <h4>Nav title</h4>
