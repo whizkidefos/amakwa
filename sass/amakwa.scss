@@ -3,6 +3,50 @@ $colorSecondary: #834339;
 $borderRadius: 20px;
 $boxShadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
 
+::selection {
+    background-color: $colorSecondary;
+    color: white;
+}
+
+//ScrollBar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $colorPrimary;
+}
+
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+    background: $colorSecondary;
+}
+
+.amakwa-button {
+    background: $colorPrimary !important;
+    border: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: $boxShadow !important;
+    color: white !important;
+    padding: 10px 30px !important;
+    text-decoration: none !important;
+    transition: all 250ms !important;
+    cursor: pointer !important;
+
+    &:hover {
+        text-decoration: none !important;
+        color: $colorPrimary !important;
+        background: white !important;
+    }
+}
+
 .hide-on-mobile {
     @media (max-width: 550px) {
         display: none;
