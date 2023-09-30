@@ -3,6 +3,22 @@ $colorSecondary: #834339;
 $borderRadius: 20px;
 $boxShadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
 ::selection {
     background-color: $colorSecondary;
     color: white;
@@ -25,7 +41,7 @@ $boxShadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Handle on hover */
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: $colorSecondary;
 }
 
@@ -54,10 +70,10 @@ $boxShadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
 }
 
 .section-heading {
-        color: $colorPrimary;
-        font-weight: bold;
-        font-size: 2rem
-    }
+    color: $colorPrimary;
+    font-weight: bold;
+    font-size: 2rem
+}
 
 // Components
 @import './components/hp-banner';
