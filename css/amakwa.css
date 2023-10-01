@@ -288,6 +288,30 @@ footer {
   padding: 2rem 0;
 }
 
+#menu-footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#menu-footer-menu a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 250ms;
+  margin-right: 10px;
+}
+#menu-footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-address {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .page-banner {
   background: #435423;
   border-radius: 20px;
