@@ -22,38 +22,15 @@
         <span uk-icon="close" class="close-menu"></span>
         <div class="nav-wrapper">
             <div class="nav-group">
-                <h4>Nav title</h4>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-            </div>
-
-            <div class="nav-group">
-                <h4>Nav title</h4>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-            </div>
-
-            <div class="nav-group">
-                <h4>Nav title</h4>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-            </div>
-
-            <div class="nav-group">
-                <h4>Nav title</h4>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-            </div>
-
-            <div class="nav-group">
-                <h4>Nav title</h4>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
-                <a href="#">Dummy link</a>
+                <h4><span uk-icon="icon: thumbnails"></span> Main Navigation</h4>
+                <?php
+                    $args = array(
+                        'theme_location' => 'main-menu',
+                        'container'      => 'nav',
+                        'container_class'=> 'main-menu'
+                    );
+                    wp_nav_menu( $args );
+                ?>
             </div>
         </div>
     </nav>

@@ -209,17 +209,17 @@ h6 {
 
 .main-nav {
   background: white;
-  border-radius: 20px;
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
   padding: 3rem 2rem;
   margin: 20px;
   position: fixed;
-  left: 0;
-  right: 0;
-  top: -100%;
-  height: auto;
+  left: -100%;
+  top: 0px;
+  height: 100%;
+  width: 300px;
   z-index: 10;
   transition: all 250ms ease-in-out;
+  border-top-right-radius: 30px;
 }
 @media (max-width: 960px) {
   .main-nav {
@@ -247,31 +247,39 @@ h6 {
 }
 .main-nav .nav-group {
   margin: 20px 0;
-  width: calc(25% - 20px);
-}
-@media (max-width: 768px) {
-  .main-nav .nav-group {
-    width: calc(50% - 20px);
-  }
-}
-@media (max-width: 550px) {
-  .main-nav .nav-group {
-    width: 100%;
-  }
+  width: 100%;
 }
 .main-nav .nav-group h4 {
+  border-bottom: 1px solid #435423;
   color: #435423;
   font-weight: 600;
-  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.main-nav .nav-group ul,
+.main-nav .nav-group ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 0;
+}
+.main-nav .nav-group li {
+  list-style: none;
+  margin: 10px 0;
 }
 .main-nav .nav-group a {
-  color: #666;
+  color: #435423;
   display: block;
+  font-weight: 600;
   text-decoration: none;
   transition: all 250ms;
 }
 .main-nav .nav-group a:hover {
   color: #834339;
+}
+.main-nav .nav-group .current-menu-item a {
+  color: #834339;
+  text-decoration: underline;
 }
 
 footer {
@@ -305,6 +313,8 @@ footer {
 .page-banner-content h1 {
   color: white;
   margin-bottom: 0;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .page-content {

@@ -60,7 +60,6 @@
 
 .main-nav {
     background: white;
-    border-radius: $borderRadius;
     box-shadow: $boxShadow;
     padding: 3rem 2rem;
     margin: 20px;
@@ -70,12 +69,13 @@
     }
 
     position: fixed;
-    left: 0;
-    right: 0;
-    top: -100%;
-    height: auto;
+    left: -100%;
+    top: 0px;
+    height: 100%;
+    width: 300px;
     z-index: 10;
     transition: all 250ms ease-in-out;
+    border-top-right-radius: 30px;
 
     .close-menu {
         position: absolute;
@@ -101,31 +101,44 @@
 
     .nav-group {
         margin: 20px 0;
-        width: calc(25% - 20px);
-
-        @media (max-width: 768px) {
-            width: calc(50% - 20px);
-        }
-
-        @media (max-width: 550px) {
-            width: 100%;
-        }
+        width: 100%;
 
         h4 {
+            border-bottom: 1px solid $colorPrimary;
             color: $colorPrimary;
             font-weight: 600;
-            margin: 0;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        ul,
+        ol {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-left: 0;
+        }
+
+        li {
+            list-style: none;
+            margin: 10px 0;
         }
 
         a {
-            color: #666;
+            color: $colorPrimary;
             display: block;
+            font-weight: 600;
             text-decoration: none;
             transition: all 250ms;
 
             &:hover {
                 color: $colorSecondary;
             }
+        }
+
+        .current-menu-item a {
+            color: $colorSecondary;
+            text-decoration: underline;
         }
     }
 }
