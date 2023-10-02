@@ -5,6 +5,11 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -342,5 +347,70 @@ footer {
 }
 
 .page-content {
-  padding: 5rem 0;
+  padding: 3rem 0;
+}
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5 {
+  color: #435423;
+}
+.page-content a {
+  color: #834339;
+  text-decoration: none;
+  transition: all 250ms;
+}
+.page-content a:hover {
+  text-decoration: underline;
+}
+
+.page-content-blocks {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.quick-links {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+}
+.quick-links img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.quick-links-content {
+  padding: 20px;
+}
+.quick-links h3 {
+  color: #435423;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.quick-links a {
+  color: #435423;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: all 250ms;
+}
+.quick-links a:hover {
+  color: #834339 !important;
+}
+
+.amakwa-contact-form input {
+  border-color: #435423 !important;
+  border-radius: 10px !important;
+}
+.amakwa-contact-form textarea {
+  border-color: #435423 !important;
+  border-radius: 20px !important;
+}
+.amakwa-contact-form:active, .amakwa-contact-form:focus {
+  border-color: #834339 !important;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1) !important;
 }
