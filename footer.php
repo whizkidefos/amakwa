@@ -2,7 +2,10 @@
     <div class="uk-container">
         <div class="uk-child-width-1-2@m" uk-grid>
             <address class="footer-address">
-                <p><span uk-icon="icon: location;"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis ipsam? Libero voluptas tenetur doloribus ab quos repudiandae deleniti corporis eius praesentium quae quis dicta, illo animi velit vel. Assumenda.</p>
+                <p class="uk-flex">
+                    <span uk-icon="icon: location;"></span>
+                    <span>&nbsp; Amakwa Unity School Road, Amakwa, Ekwusigo Local Government Area, Anambra State</span>
+                </p>
             </address>
             <div class="">
                 <?php

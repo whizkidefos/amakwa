@@ -44,3 +44,44 @@ $colorSecondary: #834339;
         }
     }
 }
+
+.summary {
+    margin-top: -3.5rem;
+}
+
+.summary-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.summary-block {
+    width: calc(25% - 20px);
+    padding: 10px 0;
+    font-weight: 100;
+    color: $colorPrimary;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        font-weight: normal;
+    }
+
+    @media (max-width: 960px) {
+        width: calc(50% - 20px);
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+
+    &-text {
+        margin-top: 3px;
+    }
+}
