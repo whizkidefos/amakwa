@@ -4,7 +4,7 @@ $colorSecondary: #834339;
 .hp-banner {
     background: $colorPrimary;
     border-radius: 20px;
-    height: 700px;
+    height: 600px;
     margin: 20px;
     display: flex;
     align-items: center;
@@ -47,6 +47,10 @@ $colorSecondary: #834339;
 
 .summary {
     margin-top: -3.5rem;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
 .summary-wrapper {
@@ -79,9 +83,5 @@ $colorSecondary: #834339;
 
     @media (max-width: 600px) {
         width: 100%;
-    }
-
-    &-text {
-        margin-top: 3px;
     }
 }

@@ -109,3 +109,14 @@
         box-shadow: $boxShadow !important;
     }
 }
+
+.faq-page-content {
+    li {
+        border-bottom: 1px solid #eee;
+        padding: 10px;
+    }
+
+    .uk-accordion-title {
+        color: $colorPrimary;
+    }
+}

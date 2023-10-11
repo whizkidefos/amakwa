@@ -5,4 +5,38 @@
 .news-and-events-card {
     box-shadow: $boxShadow;
     border-radius: $borderRadius;
+    position: relative;
+
+    img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+    }
+
+    .news-and-events-image {
+        position: relative;
+    }
+
+    .news-and-events-meta {
+        border-top-right-radius: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: white;
+        color: $colorPrimary;
+        padding: 10px;
+        opacity: 0.8;
+
+        small {
+            font-weight: 600;
+        }
+    }
+
+    .news-and-events-content {
+        padding: 20px;
+    }
+
+    .news-and-events-cta {
+        margin: 30px 0;
+    }
 }

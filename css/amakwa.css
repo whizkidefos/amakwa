@@ -76,7 +76,7 @@ h6 {
 .hp-banner {
   background: #435423;
   border-radius: 20px;
-  height: 700px;
+  height: 600px;
   margin: 20px;
   display: flex;
   align-items: center;
@@ -121,6 +121,11 @@ h6 {
 .summary {
   margin-top: -3.5rem;
 }
+@media (max-width: 600px) {
+  .summary {
+    display: none;
+  }
+}
 
 .summary-wrapper {
   display: flex;
@@ -153,9 +158,6 @@ h6 {
   .summary-block {
     width: 100%;
   }
-}
-.summary-block-text {
-  margin-top: 3px;
 }
 
 .intro {
@@ -201,6 +203,34 @@ h6 {
 .news-and-events-card {
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  position: relative;
+}
+.news-and-events-card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+.news-and-events-card .news-and-events-image {
+  position: relative;
+}
+.news-and-events-card .news-and-events-meta {
+  border-top-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  color: #435423;
+  padding: 10px;
+  opacity: 0.8;
+}
+.news-and-events-card .news-and-events-meta small {
+  font-weight: 600;
+}
+.news-and-events-card .news-and-events-content {
+  padding: 20px;
+}
+.news-and-events-card .news-and-events-cta {
+  margin: 30px 0;
 }
 
 .main-header {
@@ -352,7 +382,7 @@ footer {
 #menu-footer-menu a {
   color: white;
   font-size: 14px;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 250ms;
   margin-right: 10px;
 }
@@ -462,4 +492,12 @@ footer {
 .amakwa-contact-form:active, .amakwa-contact-form:focus {
   border-color: #834339 !important;
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.faq-page-content li {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+.faq-page-content .uk-accordion-title {
+  color: #435423;
 }
