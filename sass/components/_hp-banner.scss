@@ -69,12 +69,16 @@ $colorSecondary: #834339;
 .summary-block {
     width: calc(25% - 20px);
     padding: 10px 0;
-    font-weight: 100;
-    color: $colorPrimary;
-    transition: all 0.3s ease-in-out;
 
-    &:hover {
-        font-weight: normal;
+    a {
+        font-weight: 100;
+        color: $colorPrimary;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            font-weight: normal;
+            text-decoration: none;
+        }
     }
 
     @media (max-width: 960px) {

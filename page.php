@@ -25,7 +25,7 @@
                         <hr>
                         <a class="quick-link" href="/faqs"><span uk-icon="question"></span> Frequently asked questions</a>
                         <a class="quick-link" href="/news-events"><span uk-icon="info"></span> News & events</a>
-                        <a class="quick-link" href="/about#principals-note"><span uk-icon="comment"></span> Principals statement</a>
+                        <a class="quick-link" href="/about#principals-statement"><span uk-icon="comment"></span> Principals statement</a>
                         <a class="quick-link" href="/admissions"><span uk-icon="copy"></span> Admissions</a>
                         <a class="quick-link" href="/academics"><span uk-icon="bookmark"></span> Academics</a>
                     </div>

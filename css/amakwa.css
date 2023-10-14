@@ -71,6 +71,7 @@ h6 {
   color: #435423;
   font-weight: bold;
   font-size: 2rem;
+  text-transform: capitalize;
 }
 
 .hp-banner {
@@ -142,12 +143,15 @@ h6 {
 .summary-block {
   width: calc(25% - 20px);
   padding: 10px 0;
+}
+.summary-block a {
   font-weight: 100;
   color: #435423;
   transition: all 0.3s ease-in-out;
 }
-.summary-block:hover {
+.summary-block a:hover {
   font-weight: normal;
+  text-decoration: none;
 }
 @media (max-width: 960px) {
   .summary-block {
@@ -500,4 +504,111 @@ footer {
 }
 .faq-page-content .uk-accordion-title {
   color: #435423;
+}
+
+.about-us {
+  padding: 5rem 0;
+}
+
+.our-story {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: -3rem;
+}
+@media (max-width: 960px) {
+  .our-story {
+    margin-top: 3rem;
+  }
+}
+.our-story small {
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+.ltr-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.ltr-flex figure {
+  width: 60%;
+}
+@media (max-width: 960px) {
+  .ltr-flex figure {
+    width: 100%;
+  }
+}
+.ltr-flex figure img {
+  width: 100%;
+  border-radius: 20px;
+}
+.ltr-flex article {
+  width: 40%;
+  background: white;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-left: -40px;
+}
+@media (max-width: 960px) {
+  .ltr-flex article {
+    width: 100%;
+    margin-left: 0;
+    box-shadow: none;
+  }
+}
+
+.rtl-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+@media (max-width: 960px) {
+  .rtl-flex {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+.rtl-flex figure {
+  width: 60%;
+}
+@media (max-width: 960px) {
+  .rtl-flex figure {
+    width: 100%;
+  }
+}
+.rtl-flex figure img {
+  width: 100%;
+  border-radius: 20px;
+}
+.rtl-flex article {
+  width: 40%;
+  background: white;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-right: -40px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 960px) {
+  .rtl-flex article {
+    width: 100%;
+    margin-right: 0;
+    box-shadow: none;
+  }
+}
+
+.principals-statement article {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 3rem;
 }

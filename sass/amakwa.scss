@@ -77,7 +77,8 @@ h6 {
 .section-heading {
     color: $colorPrimary;
     font-weight: bold;
-    font-size: 2rem
+    font-size: 2rem;
+    text-transform: capitalize
 }
 
 // Components
@@ -89,3 +90,4 @@ h6 {
 @import './header';
 @import './footer';
 @import './page';
+@import './page-about-us';

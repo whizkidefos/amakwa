@@ -1,0 +1,109 @@
+.about-us {
+    padding: 5rem 0;
+}
+
+.our-story {
+    background: white;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    padding: 25px;
+    margin-top: -3rem;
+
+    @media (max-width: 960px) {
+        margin-top: 3rem;
+    }
+
+    small {
+        font-weight: 600;
+        display: block;
+        text-align: center;
+    }
+}
+
+.ltr-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+
+    figure {
+        width: 60%;
+
+        @media (max-width: 960px) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            border-radius: $borderRadius;
+        }
+    }
+
+    article {
+        width: 40%;
+        background: white;
+        box-shadow: $boxShadow;
+        padding: 25px;
+        margin-left: -40px;
+
+        @media (max-width: 960px) {
+            width: 100%;
+            margin-left: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+.rtl-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+
+    @media (max-width: 960px) {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    figure {
+        width: 60%;
+
+        @media (max-width: 960px) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            border-radius: $borderRadius;
+        }
+    }
+
+    article {
+        width: 40%;
+        background: white;
+        box-shadow: $boxShadow;
+        padding: 25px;
+        margin-right: -40px;
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 960px) {
+            width: 100%;
+            margin-right: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+.principals-statement {
+    article {
+        background: white;
+        border-radius: $borderRadius;
+        box-shadow: $boxShadow;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
