@@ -52,6 +52,6 @@ add_action( 'wp_enqueue_scripts', 'amakwaScripts' );
 
 // Theme support
 include get_theme_file_path( '/inc/theme-support.php' );
-include get_theme_file_path( '/inc/custom-login.php' );
 include get_theme_file_path( '/inc/custom-post-types.php' );
+include get_theme_file_path( '/inc/custom-login.php' );
 

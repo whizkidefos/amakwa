@@ -10,7 +10,7 @@ function createPostType() {
                 'singular_name' => __( 'FAQ', 'amakwa' )
             ),
             'public'              => true,
-            'has_archive'         => true,
+            'has_archive'         => false,
             'rewrite'             => array('slug' => 'faqs'),
             'show_in_rest'        => true,
             'show_in_admin_bar'   => true,
