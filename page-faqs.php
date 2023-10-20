@@ -91,7 +91,7 @@
                         <a class="quick-link" href="/admissions"><span uk-icon="copy"></span> Admissions</a>
                         <a class="quick-link" href="/academics"><span uk-icon="bookmark"></span> Academics</a>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
     </div>
