@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php get_header();
+
+$args = array(
+	'post_type'      => 'faqs',
+	'posts_per_page' => 20,
+);
+$faq = new WP_Query($args);
+
+?>
 
 <section class="page-banner">
     <div class="uk-container">
@@ -13,70 +21,14 @@
         <div class="uk-child-with-expand@s" uk-grid>
             <div class="uk-width-2-3@m">
             <ul uk-accordion>
+                <?php if ($faq->have_posts()): while($faq->have_posts()): $faq->the_post(); ?>
                 <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, totam.</a>
+                    <a class="uk-accordion-title" href><?php the_title(); ?></a>
                     <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
+                        <p><?php the_content(); ?></p>
                     </div>
                 </li>
-                <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit amet.</a>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit amet.</a>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit amet.</a>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit amet.</a>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit amet.</a>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit amet.</a>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href>Lorem ipsum dolor sit amet.</a>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit quasi accusantium expedita necessitatibus soluta officia, repellendus animi reprehenderit sit.
-                        </p>
-                    </div>
-                </li>
+                <?php endwhile; endif; ?>
             </ul>
             </div>
             <div class="uk-width-1-3@m">
@@ -98,3 +50,4 @@
 </main>
 
 <?php get_footer(); ?>
+
