@@ -6,7 +6,6 @@
             </figure>
             <article>
                 <h2 class="section-heading">OUR STORY</h2>
-                <hr>
                 <p>Amakwa Unity Model Secondary School was established by visionary members of the Amakwa Progressive Foundation with the noble aim of bringing quality education closer to their community's younger generation. Recognizing the challenges within the Nigerian educational system, these committed individuals came together to contribute to the founding of the school. The construction of the school's infrastructure commenced approximately six to seven years ago, while her first students were enrolled 1st September 2018. </p>
                 <a href="/about" class="amakwa-button">Learn more</a>
             </article>
